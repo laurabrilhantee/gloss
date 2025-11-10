@@ -15,35 +15,26 @@ body {
   justify-content: space-around;
   padding: 60px;
 }
-
-/* BLOCO DE TEXTO */
 .texto {
   color: #000;
-  width: 45%; /* 🔹 espaço mais confortável pro texto */
+  width: 45%; 
   text-align: left;
   line-height: 1.6;
 }
 
-/* TÍTULO */
 h1 {
-  font-size: 2rem; /* 🔹 bom equilíbrio entre grande e responsivo */
+  font-size: 2rem; 
   margin-bottom: 20px;
 }
-
-/* PARÁGRAFO */
 p {
   font-size: 1.2rem;
-  text-align: justify; /* 🔹 texto alinhadinho dos dois lados */
+  text-align: justify; 
 }
-
-/* IMAGEM */
 img {
   max-width: 400px;
   height: auto;
   border-radius: 10px;
 }
-
-/* 🔹 Responsividade pra telas menores */
 @media (max-width: 768px) {
   body {
     flex-direction: column;
