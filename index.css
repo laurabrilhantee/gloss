@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('gloss.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px;
+}
+
+/* BLOCO DE TEXTO */
+.texto {
+  color: #000;
+  width: 45%; /* 🔹 espaço mais confortável pro texto */
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* TÍTULO */
+h1 {
+  font-size: 2rem; /* 🔹 bom equilíbrio entre grande e responsivo */
+  margin-bottom: 20px;
+}
+
+/* PARÁGRAFO */
+p {
+  font-size: 1.2rem;
+  text-align: justify; /* 🔹 texto alinhadinho dos dois lados */
+}
+
+/* IMAGEM */
+img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* 🔹 Responsividade pra telas menores */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .texto {
+    width: 90%;
+    text-align: center;
+  }
+
+  img {
+    margin-top: 20px;
+    max-width: 300px;
+  }
+}
